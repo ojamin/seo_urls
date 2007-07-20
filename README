@@ -31,7 +31,7 @@ The plugin overwrites hte to_param method of the models it is applied to.
 
 Subversion
 
-* http://topfunky.net/svn/plugins/ar_fixtures
+* http://svn.redshiftmedia.com/svn/plugins/seo_urls
 
 Blog
 
