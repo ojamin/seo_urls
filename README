@@ -2,7 +2,7 @@
 
 ==Installation:
 
-Copy the "truncate_helpers" folder into the /vendor/plugins folder in your project.
+script/plugin install seo_urls
 
 ==Usage:
 
@@ -12,9 +12,15 @@ class Post < ActiveRecord::Base
    seo_urls
 end
 
+Or to use a different attribute than name or title:
+
+class Post < ActiveRecord::Base
+   seo_urls "nickname"
+end
+
 ==Information
 
-The plugin looks for 'name' or 'title' attributes and if they are available it uses them to generate a search engine friendly string. to_params method is overwritten so that it returns the the numerical id of the record with the search engine friendly string appended to it.
+The plugin looks for 'name' or 'title' attributes and if they are available it uses them to generate a search engine friendly string. to_param method is overwritten so that it returns the the numerical id of the record with the search engine friendly string appended to it.
 
 An example model
 @post=>{:id=>12,:title=>"seo_urls rails plugin"}
@@ -24,8 +30,6 @@ post_url(@post)=>"/posts/show/12"
 
 With the plugin:
 post_url(@post)=>"/posts/show/12-seo-urls-rails-plugin"
-
-The plugin overwrites hte to_param method of the models it is applied to.
 
 == Resources
 
