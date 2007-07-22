@@ -31,6 +31,8 @@ post_url(@post)=>"/posts/show/12"
 With the plugin:
 post_url(@post)=>"/posts/show/12-seo-urls-rails-plugin"
 
+If the value of the attribute being used to create the url string for a particular model changes, so will the resulting url string. However, old urls (which might have been stored in bookmarks etc.) will still work because rails only pays attention to the id reference number that begins the :id portion of any url, ignoring anything that follows it.
+
 == Resources
 
 Subversion
