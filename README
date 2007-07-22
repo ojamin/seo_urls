@@ -12,7 +12,7 @@ class Post < ActiveRecord::Base
    seo_urls
 end
 
-Or to use a different attribute than name or title:
+Or to use an attribute other than name or title:
 
 class Post < ActiveRecord::Base
    seo_urls "nickname"
@@ -36,10 +36,6 @@ post_url(@post)=>"/posts/show/12-seo-urls-rails-plugin"
 Subversion
 
 * http://svn.redshiftmedia.com/svn/plugins/seo_urls
-
-Blog
-
-* http://www.bitbutter.com
 
 Author
 
