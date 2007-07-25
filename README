@@ -2,7 +2,7 @@
 
 ==Installation:
 
-script/plugin install seo_urls
+script/plugin install http://svn.redshiftmedia.com/svn/plugins/seo_urls
 
 ==Usage:
 
